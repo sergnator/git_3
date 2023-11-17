@@ -36,12 +36,6 @@ class MainWindow(QMainWindow):
         self.draw_ = False
 
 
-def except_hook(exc_type, exc_value, exc_tb):
-    print(''.join(traceback.format_exception(exc_type, exc_value, exc_tb)))
-
-
-sys.excepthook = except_hook
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = MainWindow()
