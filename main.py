@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
     def draw(self, qp: QPainter):
         x, y = random.randint(0, 1000), random.randint(0, 1000)
         center = QPoint(x, y)
-        r = random.randint(100, 100)
+        r = random.randint(1, 200)
         qp.setBrush(QColor(255, 255, 0))
         qp.drawEllipse(center, r, r)
 
